@@ -1,0 +1,45 @@
+package labTest2;
+import java.util.Scanner;
+public class LabTest2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 int x;
+		    Scanner sc = new Scanner(System.in);
+
+	System.out.print("Enter the size : ");
+	x = sc.nextInt();
+
+	System.out.println("* | 1 2 3 4 5 6 7 8 9 10");
+	System.out.println("-------------------------------------------");
+	int row = 1;
+	int column = 1;
+
+	int[][] arrTable = new int[x][10];
+
+	for(int a = 0; a < arrTable.length; a++)
+	{
+	   for(int b = 0; b < arrTable[a].length; b++)
+	   {
+	      arrTable[a][b] =( row * column );
+	      column = column + 1;
+	   }
+	   row = row + 1;
+	   column = 1;
+	}
+	for(int a = 0; a < arrTable.length; a++)
+	{
+		System.out.printf(" %1$d|", a+1);
+	   for(int b = 0; b < arrTable[a].length; b++)
+	   {
+		  System.out.print(" " + arrTable[a][b] + "  ");
+	   }
+	   
+	   System.out.print("\n");
+
+		    
+	}
+
+	}
+
+}
