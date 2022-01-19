@@ -1,0 +1,56 @@
+package labTest2;
+import java.util.Scanner;
+public class CircleComputation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+	    double  diameter, circumference, area, radius;
+	    
+		System.out.println("Enter radius : ");
+		radius = sc.nextDouble();
+		
+		diameter = 2.0 * radius;
+		System.out.printf("\nDiameter is : %.2fcm", diameter);
+		
+		area = Math.PI * radius * radius;
+		System.out.printf("\nArea is : %.2fcm", area);
+
+		circumference = 2.0 * Math.PI * radius;
+		System.out.printf("\nCircuference is : %.2fcm", circumference);
+
+	}
+
+}
+
+
+
+
+package labTest2;
+import java.util.Scanner;
+public class CylinderComputation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+	    double radius, height, surfaceArea, baseArea, volume;
+		
+		
+		System.out.print("Enter the radius of the cylinder : ");
+		radius = sc.nextDouble();
+		
+		System.out.print("Enter the height of the cylinder : ");
+		height = sc.nextDouble();
+		
+		baseArea = Math.PI * radius * radius;
+		System.out.printf("\nBase area is : %.2fcm", baseArea);
+		
+		surfaceArea = 2.0 * Math.PI * radius + 2.0 * baseArea;
+		System.out.printf("\nSurface area is : %.2fcm", surfaceArea);
+		
+		volume = baseArea * height;
+		System.out.printf("\nVolume is : %.2fcm", volume);
+
+	}
+
+}
